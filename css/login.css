@@ -1,0 +1,19 @@
+/* 
+* @Author: anchen
+* @Date:   2017-09-29 10:40:55
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-09-29 13:51:04
+*/
+body{overflow:hidden;}
+.video-player{ background-color: transparent; display: block; position: absolute; z-index: 1; top:0;}
+.video_mask{ width:100%; height:100%; position:absolute; left:0; top:0; z-index:90; background-color:rgba(0,0,0,0.5);}
+.login{ height:260px; width:260px; padding:20px; background-color:rgba(0,0,0,0.5); border-radius: 4px; position:absolute; top: 50%; left: 50%; margin:-150px 0 0 -150px; z-index:99;}
+.login p{ text-align: center; margin-bottom: 15px;}
+/* .login input:nth-child(2){border:1px solid #f00;} */
+.login input{width: 100%; height: 35px; margin-bottom: 15px; border-radius: 4px; border:none; padding-left: 10px;}
+.login input#input1{width: 50%;}
+.login input#checkCode{ width: 42%; background: none; color: #fff; font-size: 18px; letter-spacing: 4px; cursor: pointer;}
+.login button{width: 100%; height: 40px; border-radius:5px; border:none; background: #04897D; color: #fff; font-size: 16px; letter-spacing: 2px; cursor: pointer;}
+.form_code{ position:relative; }
+.form_code .code{ position:absolute; right:0; top:1px; cursor:pointer; }
+.login_btn{ width:100%; }

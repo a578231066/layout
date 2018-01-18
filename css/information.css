@@ -1,0 +1,76 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.9.30
+    最新更新:2017.9.30
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间:
+*/
+
+body{overflow-x: hidden;}
+
+header{width: 98%; height: 20px; background: #FCFCFC; border-bottom:1px solid #DDD; padding:10px 15px; border-radius: 4px 4px 0 0;}
+header .layui-icon{ font-size: 14px;}
+header .layui-icon span{ display: inline-block; width: 10px; height: 10px; line-height: 2px; margin-right: 4px; border-radius:2px;}
+
+.main{ width: 100%; height: auto;}
+.main div{width: 100%; padding-top:20px;}
+.main div span{ display: inline-block; width: 100px; text-align: right; letter-spacing: 1px; font-size: 14px; color: #333; letter-spacing: 1px;}
+.main div i{font-style: normal; padding-left: 10px; font-size: 14px;}
+/* 顶部 */
+.main div.one{ width: 93.9%; padding-left: 100px; padding-bottom: 20px; overflow: hidden; zoom: 1; border-bottom:1px dotted #E4E4E4;}
+.main div.one span{ width: 6%;}
+.main div.one p{ width: 120px; height: 120px; float: left;}
+.main div.one p img{border-radius:10px; vertical-align: middle;}
+.main div.one ul{ width: 80%; margin-left: 10px; float: left;}
+.main div.one ul li{margin-top: 17px;}
+
+/* 信息 */
+.main div.two{ overflow: hidden; padding: 0; border-bottom:1px solid #E5E5E5;}
+.main div.two div{ width: 30%; float: left; padding-top: 0; margin-top: 20px;}
+.main div.two div p{color: #fff; height: 40px; line-height: 40px; padding-left: 20px; font-weight: 700; letter-spacing: 1px; font-size: 16px; font-weight: "微软雅黑"}
+.main div.two div p span{ padding-right: 20px; color: #fff; font-size: 14px; letter-spacing: 2px; font-weight: 400; cursor: pointer;}
+.main div.two div:first-child{ margin-left: 100px;}
+.main div.two div:first-child ul{border-right:1px solid #E5E5E5;}
+.main div.two div:first-child p{background: #37AAE1;}
+.main div.two div ul{ padding-left: 20px; padding: 10px 0;}
+.main div.two div li{ line-height: 40px; font-size: 18px;}
+.main div.two div li span{ height: 100%;}
+.main div.two div li i{color: #333; letter-spacing: 1px; font-size: 16px;}
+.main div.two div li:last-child input{ background:none; border:none; cursor: pointer; font-size: 14px; padding-left: 30px; color: #2E95CD;}
+
+.main div.two div:last-child ul{border-left:none;}
+.main div.two div:last-child p{background: #3598DB;}
+.main div.two div:last-child li:first-child i{color: #FF0000;}
+.main div.two div:last-child li:first-child button{ width: 50px; height: 25px; font-size: 14px; margin-right: 15px; border:none; border-radius:2px; background: #FF6E49; color: #fff; cursor:pointer; letter-spacing: 1px;}
+
+
+
+
+.zhedang{width: 100%; background: rgba(0,0,0,.4); position:fixed; top: 0; left: 0; overflow: hidden; display: block; display: none;}
+.vip{ width: 100%; position:fixed; top: 0; left: 0; display: none;}
+.vip1{ width: 100%; position:fixed; top: 0; left: 0; display: none;}
+.vipNei{ width: 400px; height: 400px; background: #fff; border-radius: 5px; margin:150px auto; box-shadow: 1px 1px 1px rgba(0,0,0,.075);}
+.vipNei h1{ height: 60px; line-height: 60px; font-size: 20px; text-align: center; color: #333; letter-spacing: 2px; font-weight: 400; border-bottom:1px solid #E5E5E5; position:relative;}
+.vipNei h1 span{ display: inline-block; position: absolute; top: -10px; right: 10px; cursor: pointer; color: #aaa; font-size: 16px;}
+.vipNei ul{ height: 260px;}
+.vipNei ul li{ line-height: 40px; margin-top:20px;}
+.vipNei ul li span{ display: inline-block; width: 120px; text-align: right; font-size: 16px; margin-right: 10px;}
+.vipNei ul li input{ padding:8px; border:1px solid #DDD; box-shadow: inset 0 1px 1px rgba(0,0,0,.075); border-radius:5px;}
+.vipNei p{ height: 50px; line-height: 60px; text-align: center; border-top:1px solid #E5E5E5;}
+.vipNei p button{ width: 100px; height: 35px; border:none; background: #3598DB; color: #fff; border-radius: 5px; cursor: pointer; letter-spacing: 1px;}
+
+.tixian{width: 100%; position: fixed; top: 0; left: 0; display: none;}
+.txNei{width: 350px; height: 400px; background: #fff; border-radius: 5px; margin: 150px auto; box-shadow: 1px 1px 1px rgba(0,0,0,.075);}
+.txNei h1{height: 60px; line-height: 60px; font-size: 20px; text-align: center; color: #333; letter-spacing: 2px; font-weight: 400; border-bottom:1px solid #E5E5E5; position: relative;}
+.txNei h1 span{display: inline-block; position:absolute; top: -10px; right: 10px; cursor: pointer; color: #aaa; font-size: 16px;}
+.txNei ul{height: 270px; overflow: hidden;}
+.txNei ul li{ margin-top: 20px; padding-bottom: 20px; font-size: 18px; padding-left: 50px; color: #000; border-bottom:1px solid #D4D4D4;}
+.txNei ul li img{display: inline-block;}
+.txNei ul li p{ padding-top: 10px; display: none;}
+.txNei ul li p span{ display: inline-block; line-height: 25px; font-size: 14px; letter-spacing: 1px; color: #000;}
+.txNei ul li p span i{ font-style: normal; color: #f00; font-size: 16px;}
+.txNei ul li input{ width: 15px; height: 15px; margin-right: 10px; vertical-align: middle;}
+.txNei p.btn{height: 50px; line-height: 60px; text-align: center; border-top:1px solid #E5E5E5;}
+.txNei p.btn button{width: 100px; height: 35px; border:none; background: #3598DB; color: #fff; border-radius:5px; cursor: pointer; letter-spacing: 1px;}

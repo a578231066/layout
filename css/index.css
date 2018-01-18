@@ -1,0 +1,12 @@
+.layui-tab-content{ padding-top:-10px;}
+.active{background: #009688;}
+
+/* 更改头部button样式 */
+.layui-nav .layui-nav-item .layui-btn{background: none; color: #BABBBD;}
+.layui-body .layui-tab .layui-tab-title{ width: 100%; margin-top: -11px; padding: 0;}
+.layui-body .layui-tab .layui-tab-title li{width: 60px;}
+.layui-body .layui-tab .layui-tab-content{padding: 0; overflow: auto;}
+/* 右侧 iframe */
+.layui-body .layui-tab-content{width: 100%; float: left;}
+.layui-body .layui-tab-content iframe{width: 100%;}
+/* 右侧iframe 结束 */

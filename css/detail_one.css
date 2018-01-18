@@ -1,0 +1,107 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.9.30
+    最新更新:2017.9.30
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间:
+*/
+header{width: 98%; height: 20px; background: #FCFCFC; border-bottom:1px solid #DDD; padding:10px 15px; border-radius: 4px 4px 0 0;}
+header .layui-icon{ font-size: 14px;}
+header .layui-icon span{ display: inline-block; width: 10px; height: 10px; line-height: 2px; margin-right: 4px; border-radius:2px;}
+
+.main{ width: 100%; height: auto;}
+.main div{width: 100%; padding:10px 0;}
+.main div span{ display: inline-block; width: 10%; text-align: right; letter-spacing: 1px; font-size: 14px; color: #626262; font-weight: 700;}
+.main div i{font-style: normal; color: #ff0000; padding-right: 10px; font-size: 14px;}
+.main div:first-child{margin-top: 20px;}
+.main div:first-child input{width: 60%; margin-left: 20px; border:1px solid #DDD; border-radius:5px; box-shadow: inset 0 1px 1px rgba(0,0,0,.075); padding: 10px;}
+
+.main div select{ width: 10%; height: 40px; margin-left: 20px; padding-left: 20px; line-height: 30px; border-radius:5px; border:1px solid #DDD; box-shadow: inset 0 1px 1px rgba(0,0,0,.075); font-size: 16px; color: #666;}
+
+.main div.four{ padding-top: 0;}
+.main div.four div{width: 100%; height: auto; overflow: hidden;}
+.main div.four div span{float: left;}
+.main div.four div img{ margin-left: 25px; display: inline-block; float: left;}
+.main div.four input{ width: 70px; height: 23px; padding: 0; margin-top: 35px; float: left;}
+
+
+.main div.five{ height: auto;}
+.main div.five small{ margin-left:20px; margin-bottom:20px; font-size: 13px; color: #333; display: inline-block; letter-spacing: 1px;}
+.main div.five small i{font-style: normal; color: #f00; font-size: 16px; padding:0 5px; font-size: 18px;}
+#app{width: 109px; height:109px; margin-left: 11.4%; padding-top: 0;}
+#app .upload_warp_left img { margin:0; padding: 0;}
+#app .upload{ width: 300px;}
+#app input{ width: 72px; height: 23px; margin:0; padding:0; margin-top: 40px; margin-left:20px;}
+#app .upload_warp_img{margin:0; float: left;}
+#app .upload_warp_img div{float: left; display: inline-block;}
+#app .upload_warp_img_div{ width: 109px; height: 109px; margin:0; margin-bottom: 10px; margin-right: 10px; float: left; cursor: pointer; position: relative;}
+#app .upload_warp_img_div img { max-width: 100%; max-height: 100%; vertical-align: middle; margin:0;}
+#app .upload_warp_img_div .appEnd{height:109px;}
+#app .upload_warp_img_div_top { width: 100%; height: 8px; background-color: rgba(0,0,0,.5); position: absolute; top: 0; left: 0; margin:0;}
+#app .upload_warp_img_div_del{ width: 14px; position: absolute; top: 6px; right: 4px;}
+
+.main div.text textarea{ vertical-align: text-top; margin-left: 20px; border:1px solid #DDD; box-shadow:  inset 0 1px 1px rgba(0,0,0,.075); border-radius:4px; padding:5px 0 0 8px; resize:none;}
+.main div.text p{ margin-left: 220px; margin-top: 10px;}
+.main div.text p i{ font-size: 16px; margin-left: 10px;}
+
+.main div ul{ margin-left: 2.8%; overflow: hidden; zoom:1; padding-top: 5px;}
+.main div ul li{ width: 25%; margin-bottom: 20px; float: left;}
+.main div ul li span{ width: 30%; text-align:right;}
+.main div ul li i.inp{ margin-left: 20px; padding:3% 3% 3% 0; border:1px solid #DDD; border-radius:5px; color: #000;}
+.main div ul li input{ width: 30%; padding: 2.5%; border:none;}
+.main div ul:last-child li select{ width: 150px; font-size: 16px; color: #000;}
+
+.main .yaoqing div{ width: 170px; margin-top: 0px;}
+.main .yaoqing div button{border:1px solid #BFBFBF; color: #333; background: #fff; width: 150px; height: 35px; border-radius: 5px; cursor: pointer; letter-spacing: 1px;}
+.main div.two_wai{ width: 74%; height: auto; padding:0; margin:0; margin-left: 10%; padding-bottom: 20px; margin-top: 20px; overflow: hidden; zoom:1; border-bottom: 1px solid #ddd;}
+.main div.two_wai div:first-child{ margin-top: 0px;}
+.main div.two_wai div:first-child input{ width: 100px; border:1px solid #bbb;}
+.main div.two_wai div:first-child button{ width: 35px; height: 35px; background: #0ae; border-radius: 5px; border:none; color: #fff; font-size: 18px; cursor: pointer;}
+
+.main div.one{ width: 98%; position:relative; padding-left:20px;}
+.main div.one strong{display: inline-block; position:absolute; top: 0; left: 0; letter-spacing: 1px; color: #337AB7; cursor: pointer; font-size: 12px;display: none;}
+
+.main div.two{ width: 350px; background: #F9F9F9; padding-top: 20px; margin:0; border:1px dotted #E4E4E4; float: left; position: relative;}
+.main div.two i{font-style: normal; display: inline-block; position: absolute; top: 4px; left: 10px;}
+.main div.two i input{padding: 2px; width: 80px; border-radius:0; border:none; background: #fff; color: #000;}
+.main div.two strong{ display: inline-block; position: absolute; top: 4px; right: 4px; letter-spacing: 1px; color: rgb(51,122,183); cursor: pointer; font-size: 12px; display: none;}
+.main div.two span{ width: 100px; margin-right: 10px;}
+.main div.two input{ width: 180px; border:1px solid #DDD; border-radius: 5px; padding: 10px; box-shadow: inset 0 1px 1px rgba(0,0,0,.075); margin-left: 0;}
+.main div.two div{ margin-top: 10px;}
+.main div.two div input{ width: 70px; height: 23px; padding: 0; margin-left: 10px;}
+
+/* 具体内容 */
+.main div.juti{display: none;}
+.main div.juti .yaoqing div{ margin:0; padding: 0; margin-left: -50px;}
+.main div.juti .yaoqing div button{margin:0; padding: 0;}
+
+.main div.juti .zhuijia{ margin-top: -30px;}
+.main div.juti .two_wai .one input{ background: #0ae; color: #fff; cursor: pointer; border: none; letter-spacing: 2px;}
+.main div.juti .tj{ display: inline-block; margin-left: 20px; padding-bottom: 10px; font-size: 14px; letter-spacing: 1px;}
+.main div.juti .two_wai .two div{ padding: 0; margin-top: 0; margin-bottom: 20px;}
+.main div.juti .two_wai .two div span.inp{ display: inline-block; width: 220px; text-align: left; font-size: 18px; font-weight: 400; vertical-align: middle;}
+.main div.juti .two_wai .two div span.inp input{ width: 60px; padding:8px; font-size: 14px; margin-bottom: 8px; margin-right: 5px;}
+.main div.juti .two_wai .two div input{ margin:0; padding:8px; width: 175px;}
+.main .attribute div.bcbj button{width: 120px; height: 40px; margin-left: 11.5%; cursor: pointer;}
+.main div.juti .two_wai .two1 div span.inp{ vertical-align: middle;}
+
+.main div label input.active{ vertical-align: middle; box-shadow: -1px 0 2px 2px  #D6EAF9,0 -1px 2px 2px #D6EAF9;}
+
+/* 点击确定 */
+.main div.btn{ text-align: center;}
+.main div.btn input{ padding:10px 40px; color: #fff; font-size: 18px; letter-spacing: 2px; border:none; background: #00AAEE; border:1px solid #00AAEE; border-radius:5px; cursor:pointer;}
+.main div.btn input:hover{background: #06B8E4; border:1px solid #00AAEE;}
+
+
+/* 弹出层 */
+.zhedang{width: 100%; background: rgba(0,0,0,.4); position:fixed; top: 0; left: 0; overflow: hidden; display: none;}
+.tishi{width: 100%; position:fixed; top: 0; left: 0; display: none;}
+.tishi .tanc{ width: 300px; height: 200px; margin:300px auto; background: #fff;}
+.tishi .tanc h4{ height: 50px; line-height: 50px; color: #333; font-size: 18px; text-align: center; border-bottom:1px solid #E5E5E5; font-weight: 400; letter-spacing: 1px;}
+.tishi .tanc p{ height: 70px; border-bottom:1px solid #E5E5E5; font-size: 16px; text-align: center; padding:20px 10px 0 10px; letter-spacing: 1px;}
+
+.tishi .tanc span{display: block; height: 50px; line-height: 50px; text-align: center;}
+.tishi .tanc span input{ padding:8px 25px; background: #F5495E; border-radius:5px; border:none; color: #fff; margin-right: 10px; cursor:pointer;}
+.tishi .tanc span input:hover{background: #E6E6E6; color: #000; border:none;}

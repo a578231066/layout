@@ -1,0 +1,13 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.9.30
+    最新更新:2017.9.30
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间:
+*/
+
+header{width: 98%; height: 20px; background: #FCFCFC; border-bottom:1px solid #DDD; padding:10px 15px; border-radius: 4px 4px 0 0;}
+header .layui-icon{ font-size: 14px;}
+header .layui-icon span{ display: inline-block; width: 10px; height: 10px; line-height: 2px; margin-right: 4px; border-radius:2px;}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="all/layui/css/layui.css" />
+    <link rel="stylesheet" href="css/detail_one.css" type="text/css" />
+    <style>
+        a{}
+    </style>
+</head>
+<body>
+    <header>
+        <strong class="layui-icon"><span>&#xe642;</span> 商品详情</strong>
+    </header>
+    <a href="www.baidu.com" target="_brank"></a>
+    <div class="main">
+        <div class="one1">
+            <label for="">
+                <span><i>*</i>商品标题 :</span>
+                <input type="text" placeholder="请输入商品的标题" />
+            </label>
+        </div>
+        <div class="yes">
+            <label>
+                <span><i>*</i>商品分类 :</span>
+                <select>
+                    <option value="0"> 请选择 </option>
+                    <option value="1">淘宝</option>
+                    <option value="2">京东</option>
+                    <option value="3">天猫</option>
+                    <option value="4">唯品会</option>
+                    <option value="5">折800</option>
+                    <option value="6">贝贝</option>
+                    <option value="7">卷皮</option>
+                    <option value="8">蘑菇街</option>
+                    <option value="9">聚美优品</option>
+                    <option value="10">美丽说</option>
+                </select>
+            </label> 
+        </div>
+        <div class="four">
+            <div>
+                <span><i>*</i>商品主图 :</span>
+                <img id="photo" src="images/shangchuanBg.png" width="109" height="109" />
+                <input type="file" name="imgOne" class="imgOne" id="imgOne" onchange="preImg(this.id,'photo')" />
+            </div>
+        </div>
+        <div class="five">
+            <span><i>*</i>商品副图 :</span>
+            <small>(必选,最多不超过<i>5</i>张)</small>
+            <div id="app">
+                <div class="upload_warp_left fl" style=" width:109px; margin:0;">
+                    <img id="photo3" src="images/shangchuanBg.png" width="109px" height="109px" />
+                </div>
+                <div class="upload">
+                    <input @change="fileChange($event)" type="file" id="upload_file" />
+                </div>
+                <span class="upload_warp_img" v-show="imgList.length!=0" style="width:600px;">
+                    <span class="upload_warp_img_div" v-for="(item,index) of imgList">
+                        <div class="upload_warp_img_div_top">
+                            <img src="images/del.png" class="upload_warp_img_div_del" @click="fileDel(index)" />
+                        </div>
+                        <img :src="item.file.src" class="appEnd"/>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <p class="clear"></p>
+        <div class="text">
+            <span><i>*</i>商品简介 :</span>
+            <textarea cols="50" rows="5" placeholder="介绍此店铺专营类目及特色" onchange="this.value=this.value.substring(0, 200)" onkeydown="this.value=this.value.substring(0, 200)" onkeyup="this.value=this.value.substring(0, 200)"></textarea>
+            <p>简介不超过<i>200</i>字</p>
+        </div>
+        
+        <p class="clear"></p>
+        <div class="ul">
+            <ul>
+                <li>
+                    <span><i>*</i>出厂价:</span>
+                    <i class="inp"><input type="text" placeholder="请输入价格" />(元)</i>
+                </li>
+                <li class="inp">
+                    <span><i>*</i>市场价:</span>
+                    <i class="inp"><input type="text" placeholder="请输入价格" />(元)</i>
+                </li>
+                <p class="clear"></p>
+                <li>
+                    <span><i>*</i>PC价格:</span>
+                    <i class="inp"><input type="text" placeholder="请输入价格" />(元)</i>
+                </li>
+                <li class="inp">
+                    <span><i>*</i>总库存:</span>
+                    <i class="inp"><input type="text" placeholder="请输入库存" />(件)</i>
+                </li>
+            </ul>
+            <p class="clear"></p>
+            <ul>
+                <li>
+                    <span><i>*</i>普通会员折扣:</span>
+                    <select>
+                        <option value="请选择">请选择</option>
+                        <option value="95">95折</option>
+                        <option value="90">9折</option>
+                        <option value="85">85折</option>
+                        <option value="80">8折</option>
+                        <option value="75">75折</option>
+                        <option value="7">7折</option>
+                        <option value="65">65折</option>
+                        <option value="6">6折</option>
+                        <option value="55">55折</option>
+                        <option value="50">5折</option>
+                        <option value="45">45折</option>
+                        <option value="4">4折</option>
+                        <option value="35">35折</option>
+                        <option value="3">3折</option>
+                        <option value="25">25折</option>
+                        <option value="2">2折</option>
+                        <option value="15">15折</option>
+                        <option value="1">1折</option>
+                    </select>
+                </li>
+                <li>
+                    <span><i>*</i>高级会员折扣:</span>
+                    <select>
+                        <option value="请选择">请选择</option>
+                        <option value="95">95折</option>
+                        <option value="90">9折</option>
+                        <option value="85">85折</option>
+                        <option value="80">8折</option>
+                        <option value="75">75折</option>
+                        <option value="7">7折</option>
+                        <option value="65">65折</option>
+                        <option value="6">6折</option>
+                        <option value="55">55折</option>
+                        <option value="50">5折</option>
+                        <option value="45">45折</option>
+                        <option value="4">4折</option>
+                        <option value="35">35折</option>
+                        <option value="3">3折</option>
+                        <option value="25">25折</option>
+                        <option value="2">2折</option>
+                        <option value="15">15折</option>
+                        <option value="1">1折</option>
+                    </select>
+                </li>
+                <p class="clear"></p>
+                <li>
+                    <span><i>*</i>尊贵会员折扣:</span>
+                    <select>
+                        <option value="请选择">请选择</option>
+                        <option value="95">95折</option>
+                        <option value="90">9折</option>
+                        <option value="85">85折</option>
+                        <option value="80">8折</option>
+                        <option value="75">75折</option>
+                        <option value="7">7折</option>
+                        <option value="65">65折</option>
+                        <option value="6">6折</option>
+                        <option value="55">55折</option>
+                        <option value="50">5折</option>
+                        <option value="45">45折</option>
+                        <option value="4">4折</option>
+                        <option value="35">35折</option>
+                        <option value="3">3折</option>
+                        <option value="25">25折</option>
+                        <option value="2">2折</option>
+                        <option value="15">15折</option>
+                        <option value="1">1折</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="detail">
+            <span><i>*</i>商品详情 :</span>
+        </div>
+        <div class="attribute">
+            <span><i>*</i>商品属性 :</span>
+            <span class="yaoqing">
+                <div>
+                    <button>添加属性</button> 
+                </div>
+            </span>
+            <div class="zhuijia">
+                <div class="two_wai two_wai1" date-id="1">
+                    <div class="one">
+                        <input type="text" placeholder="颜色" /> <button>+</button>
+                        <strong>删除</strong>
+                    </div>
+                    <div class="two">
+                        <strong>删除</strong>
+                        <span>商品名称 :</span><input type="text" class="oneInp" /><br /> 
+                        <div>
+                            <span>商品图片 :</span>
+                            <img id="photo10" src="images/shangchuanBg.png" width="109" height="109" />
+                            <input type="file" name="imgOne" class="imgOne" id="imgOne10" onchange="preI mg(this.id,'photo10')" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bcbj"><button>保存编辑</button></div>
+        </div>
+         <div class="juti">
+            <span><i></i></span>
+            <strong class="tj">添加详细类别库存及价格</strong>
+            <div class="zhuijia">
+                <div id="juti" class="two_wai">
+                    <!-- <div class="one">
+                        <input type="submit" value="添加" />
+                    </div>
+                    <div class="two">
+                        <strong>删除</strong>
+                        <div><span>名称 :</span><span class="inp"><input type="text" placeholder="颜色" /> + <input type="text" placeholder="衣长" /></span></div>
+                        <div><span>库存 :</span><input type="text" placeholder="数量" /></div>
+                        <div><span>价格 :</span><input type="text" placeholder="价格" /></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="btn">   
+            <input type="submit" value="确定" /><!-- <button>添加商品</button> -->
+        </div>
+    </div>
+
+    <div class="zhedang"></div>
+    <div class="tishi">
+        <div class="tanc">
+            <h4>提示</h4>
+            <p></p>
+            <span><input type="submit" value="知道了" /></span>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="all/layui/layui.js"></script>
+    <script src="js/detail_one.js"></script>
+    <script src="js/vue2.2.2.js"></script>
+    <script>
+    /* 本地上传 */
+        function getFileUrl(sourceId) {
+            var url;
+            if (navigator.userAgent.indexOf("MSIE")>=1) { // IE
+                url = document.getElementById(sourceId).value;
+            } else if(navigator.userAgent.indexOf("Firefox")>0) { // Firefox
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            } else if(navigator.userAgent.indexOf("Chrome")>0) { // Chrome
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            }
+            return url;
+        }
+    /* 本地上传/预览图片 */
+        function preImg(sourceId, targetId) { 
+            var url = getFileUrl(sourceId); 
+            var imgPre = document.getElementById(targetId); 
+            imgPre.src = url; 
+        }
+
+        var app = new Vue({
+            el: '#app',
+            data () {
+                return {
+                    imgList: [],
+                    size: 0
+                }
+            },
+            methods: {
+                fileClick(){
+                    document.getElementById('upload_file').click()
+                },
+                fileChange(el){
+                    if (!el.target.files[0].size) return;
+                    this.fileList(el.target.files);
+                    el.target.value = ''
+                },
+                fileList(files){
+                    for (let i = 0; i < files.length; i++) {
+                        this.fileAdd(files[i]);
+                    }
+                },
+                fileAdd(file){
+                    this.size = this.size + file.size;//总大小
+                    let reader = new FileReader();
+                    reader.vue = this;
+                    reader.readAsDataURL(file);
+                    reader.onload = function () {
+                        file.src = this.result;
+                        this.vue.imgList.push({
+                            file
+                        });
+                    }
+                },
+                fileDel(index){
+                    this.size = this.size - this.imgList[index].file.size;//总大小
+                    this.imgList.splice(index, 1);
+                    $(".upload_warp_img_div_del").click(function(){
+                        $(".upload").show();
+                        $(".upload_warp_left").show();
+                    });
+                },
+                bytesToSize(bytes){
+                    if (bytes === 0) return '0 B';
+                    let k = 1000, // or 1024
+                      sizes = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'],
+                      i = Math.floor(Math.log(bytes) / Math.log(k));
+                    return (bytes / Math.pow(k, i)).toPrecision(3) + ' ' + sizes[i];
+                },
+                dragenter(el){
+                    el.stopPropagation();
+                    el.preventDefault();
+                },
+                dragover(el){
+                    el.stopPropagation();
+                    el.preventDefault();
+                },
+                drop(el){
+                    el.stopPropagation();
+                    el.preventDefault();
+                    this.fileList(el.dataTransfer.files);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

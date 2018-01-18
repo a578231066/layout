@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="all/layui/css/layui.css" />
+    <link rel="stylesheet" href="css/info.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <strong class="layui-icon"><span>&#xe642;</span> 商品添加</strong>
+    </header>
+    
+    <div class="main">
+        <div>
+            <label for="">
+                <span><i>*</i>商品标题 :</span>
+                <input type="text" placeholder="请输入商品的标题" />
+            </label>
+        </div>
+        <div class="yes">
+            <label>
+                <span><i>*</i>商品分类 :</span>
+                <select>
+                    <option value="0"> 请选择 </option>
+                    <option value="1">淘宝</option>
+                    <option value="2">京东</option>
+                    <option value="3">天猫</option>
+                    <option value="4">唯品会</option>
+                    <option value="5">折800</option>
+                    <option value="6">贝贝</option>
+                    <option value="7">卷皮</option>
+                    <option value="8">蘑菇街</option>
+                    <option value="9">聚美优品</option>
+                    <option value="10">美丽说</option>
+                </select>
+            </label> 
+        </div>
+        <div>
+            <label>
+                <span><i>*</i>报名活动专场 :</span>
+                <select>
+                    <option value="0"> 请选择 </option>
+                    <option value="1">淘宝</option>
+                    <option value="2">京东</option>
+                    <option value="3">天猫</option>
+                </select>
+            </label> 
+        </div>
+        <div class="four">
+            <div>
+                <span><i>*</i>商品主图 :</span>
+                <img id="photo" src="images/shangchuanBg.png" width="109" height="109" />
+                <input type="file" name="imgOne" class="imgOne" id="imgOne" onchange="preImg(this.id,'photo')" />
+            </div>
+        </div>
+        <p class="clear"></p>
+        <div class="ul">
+            <ul>
+                <li>
+                    <span><i>*</i>出厂价:</span>
+                    <i class="inp"><input type="text" placeholder="请输入价格" />(元)</i>
+                </li>
+                <li class="inp">
+                    <span><i>*</i>市场价:</span>
+                    <i class="inp"><input type="text" placeholder="请输入价格" />(元)</i>
+                </li>
+                <p class="clear"></p>
+                <li>
+                    <span><i>*</i>PC价格:</span>
+                    <i class="inp"><input type="text" placeholder="请输入价格" />(元)</i>
+                </li>
+                <li class="inp">
+                    <span><i>*</i>APP价格:</span>
+                    <i class="inp"><input type="text" placeholder="请输入价格" />(元)</i>
+                </li>
+            </ul>
+            <p class="clear"></p>
+            <ul>
+                <li>
+                    <span><i>*</i>库存:</span>
+                    <i class="inp"><input type="text" placeholder="请输入价格" />(件)</i>
+                </li>
+            </ul>
+        </div>
+        <div class="btn">
+            <input type="submit" value="添加商品" /><!-- <button>添加商品</button> -->
+        </div>
+    </div>
+
+    <div class="zhedang"></div>
+    <div class="tishi">
+        <div class="tanc">
+            <h4>提示</h4>
+            <p></p>
+            <span><input type="submit" value="知道了" /></span>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="all/layui/layui.js"></script>
+    <script src="js/info.js"></script>
+    <script src="js/vue2.2.2.js"></script>
+    <script>
+        function getFileUrl(sourceId) {
+            var url;
+            if (navigator.userAgent.indexOf("MSIE")>=1) { // IE
+                url = document.getElementById(sourceId).value;
+            } else if(navigator.userAgent.indexOf("Firefox")>0) { // Firefox
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            } else if(navigator.userAgent.indexOf("Chrome")>0) { // Chrome
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            }
+            return url;
+        }
+        function preImg(sourceId, targetId) { 
+            var url = getFileUrl(sourceId); 
+            var imgPre = document.getElementById(targetId); 
+            imgPre.src = url; 
+        }
+    </script>
+</body>
+</html>

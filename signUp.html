@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="all/layui/css/layui.css" type="text/css" />
+    <link rel="stylesheet" href="css/signUp.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <strong class="layui-icon"><span>&#xe63c;</span> 报名商品</strong>
+    </header>
+    
+    <div class="main">
+        <div class="main_top">
+            <ul>
+                <li><a href="javascript:void(0)"><button><span>+</span>添加内容</button></a></li>
+                <li class="cen"><button class="layui-icon">&#xe640;批量删除</button></li>
+                <li><input type="text" placeholder="请输入搜索关键字" /><button class="layui-icon">&#xe615; 搜索</button></li>
+            </ul>
+        </div>
+        <div class="main_down">
+            <table>
+                <thead>
+                    <tr>
+                        <th><label for="anniu"><input type="checkbox" id="anniu" /><!-- 全选 --></label></th>
+                        <th>标题</th>
+                        <th>图片</th>
+                        <th>出厂价(元)</th>
+                        <th>市场价(元)</th>
+                        <th>PC价格(元)</th>
+                        <th>APP价格(元)</th>
+                        <th>管理操作</th>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <td><input type="checkbox" name="probuct" onclick="show()"></td>
+                        <td>士大夫</td>
+                        <td><img src="images/noavatar.jpg" alt="" /></td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td class="red">100</td>
+                        <td class="red">99</td>
+                        <td>
+                            <span class="blue"><a href="#" class="layui-icon">&#xe642;编辑</a></span><br />
+                            <span class="red"><a href="#" class="layui-icon">&#xe640;删除</a></span><br />
+                            <span class="green"><a href="#" class="layui-icon">报活动</a></span>
+                        </td>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <td><input type="checkbox" name="probuct" onclick="show()"></td>
+                        <td>士大夫</td>
+                        <td><img src="images/noavatar.jpg" height="120" width="120" alt="" /></td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td class="red">100</td>
+                        <td class="red">99</td>
+                        <td>
+                            <span class="blue"><a href="#" class="layui-icon">&#xe642;编辑</a></span><br />
+                            <span class="red"><a href="#" class="layui-icon">&#xe640;删除</a></span><br />
+                            <span class="green"><a href="#" class="layui-icon">报活动</a></span>
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    
+    <div class="zhedang"></div>
+<!-- 点击编辑 -->
+    <div class="bj">
+        <div class="bjNei">
+            <h1>编辑商品<span>x</span></h1>
+            <p><span>标题 :</span><input type="text" placeholder="再此输入更改标题" /></p>
+            <p class="pic"><span>图片 :</span>
+                <img id="photo" src="images/shangchuanBg.png" width="109px" height="109px" />
+                <input type="file" name="imgOne" class="imgOne" id="imgOne" onchange="preImg(this.id,'photo')" />
+            </p>
+            <p><span>出厂价 :</span><i><input type="text" placeholder="再此输入更改价格" />(元)</i></p>
+            <p><span>市场价 :</span><i><input type="text" placeholder="再此输入更改价格" />(元)</i></p>
+            <p><span>PC价格 :</span><i><input type="text" placeholder="再此输入更改价格" />(元)</i></p>
+            <p><span>APP价格 :</span><i><input type="text" placeholder="再此输入更改价格" />(元)</i></p>
+            <h2><button>保存</button></h2>
+        </div>
+    </div>
+
+<!-- 点击删除 -->
+    <div class="dele">
+        <div class="deleNei">
+            <h1>提示信息</h1>
+            <p></p>
+            <h2><button>确定</button><button>取消</button></h2>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="all/layui/layui.js"></script>
+    <script src="js/signUp.js"></script>
+    <script>
+    /* 本地上传 */
+        function getFileUrl(sourceId) {
+            var url;
+            if (navigator.userAgent.indexOf("MSIE")>=1) { // IE
+                url = document.getElementById(sourceId).value;
+            } else if(navigator.userAgent.indexOf("Firefox")>0) { // Firefox
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            } else if(navigator.userAgent.indexOf("Chrome")>0) { // Chrome
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            }
+            return url;
+        }
+        function preImg(sourceId, targetId) { 
+            var url = getFileUrl(sourceId); 
+            var imgPre = document.getElementById(targetId); 
+            imgPre.src = url; 
+        }
+    </script>
+</body>
+</html>

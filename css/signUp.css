@@ -1,0 +1,73 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.9.30
+    最新更新:2017.9.30
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间:
+*/
+
+
+header{width: 98%; height: 20px; background: #FCFCFC; border-bottom:1px solid #DDD; padding:10px 15px; border-radius: 4px 4px 0 0;}
+header .layui-icon{ font-size: 14px;}
+header .layui-icon span{ display: inline-block; width: 10px; height: 10px; line-height: 2px; margin-right: 4px; border-radius:2px;}
+
+/* 内容 */
+.main{ width: 100%;}
+/* 内容头部 */
+.main .main_top{ width: 100%; height: 80px; line-height: 80px;}
+.main .main_top ul{ padding-left:70px; overflow: hidden; zoom:1;}
+.main .main_top ul li{float: left; margin-right: 20px;}
+.main .main_top ul li a button{ width: 100px; height: 45px; border:1px solid #0ae; color: #0ae; background: none; cursor: pointer; border-radius:5px;}
+.main .main_top ul li a button span{ width: 10px; height: 10px; line-height: 8px; display: inline-block; border:1px solid #0ae; vertical-align: middle; margin-right: 5px; border-radius:2px;}
+.main .main_top ul li a button:hover{ background: #0ae; color: #fff;}
+.main .main_top ul li a button:hover span{border:1px solid #fff;}
+.main .main_top ul li.cen button{border:1px solid #EE3333; background: none; color: #EE3333; width: 100px; height: 45px; border-radius:5px; cursor: pointer;}
+.main .main_top ul li.cen button:hover{background: #EE3333; color: #fff;}
+
+.main .main_top ul li input{ padding:10px; border-top-left-radius:5px; border-bottom-left-radius:5px; border-right: none; box-shadow: inset 0 1px 1px rgba(0,0,0,.075); border:1px solid #DDD;}
+.main .main_top ul li:last-child button{ border:1px solid #0ae; color: #0ae; background: none; cursor: pointer; border-bottom: 1px solid #0ae; border-top-right-radius:5px; border-bottom-right-radius:5px; padding:8px; vertical-align: -1px;}
+.main .main_top ul li:last-child button:hover{ background: #0ae; color: #fff;}
+
+/* 内容底部 */
+/* .main .main_down{border:1px solid #f00;} */
+.main .main_down table{width: 99.2%; margin-left: 0.4%; border:1px solid #DAE3EB;}
+.main .main_down table th{ height: 45px; background: #EAF0F7; border-bottom:1px solid #DAE3EB;}
+.main .main_down table td{ padding:10px 0; text-align: center; font-size: 16px; border-bottom:1px solid #DAE3EB;}
+.main .main_down table td.red{color: #EE0000; font-size: 18px;}
+.main .main_down table td img{width: 90px; height: 90px;}
+.main .main_down table td span a{display: inline-block; padding:5px 6px; margin-top: 6px; border-radius:5px; font-size: 14px; color: #fff; letter-spacing: 1px;}
+.main .main_down table td span.blue a{background: #0ae;}
+.main .main_down table td span.red a{ background: #DD514C;}
+.main .main_down table td span.green a{ background: #5EB95E;}
+
+
+.zhedang{width: 100%; background: rgba(0,0,0,.4); position:fixed; top: 0; left: 0; display: none;}
+.bj{width: 100%; position: fixed; top: 0; left: 0; display: none;}
+.bj .bjNei{ width: 550px; height: 600px; background: #fff; margin:40px auto; border-radius: 5px;}
+.bj .bjNei h1{ width: 100%; height: 70px; line-height: 70px; font-size: 20px; text-align: center; border-bottom:1px solid #E5E5E5; letter-spacing: 1px; position: relative;}
+.bj .bjNei h1 span{position: absolute; top: -20px; right: 10px; color: #666; font-size: 20px; font-weight: 700;}
+.bj .bjNei p{ padding: 15px 0 10px 0;}
+.bj .bjNei p span{display: inline-block; width: 100px; text-align: right; margin-right: 10px;}
+.bj .bjNei p input{ padding:10px; border:1px solid #DDD; box-shadow: inset 0 1px 1px rgba(0,0,0,.075); border-radius:5px;}
+.bj .bjNei p.pic{overflow: hidden; zoom:1;}
+.bj .bjNei p.pic span{float: left;}
+.bj .bjNei p.pic img{float: left;}
+.bj .bjNei p.pic input{width: 70px; height: 23px; padding: 0; margin: 40px 0 0 20px;}
+.bj .bjNei p i{ padding:10px; font-style: normal; border:1px solid #E5E5E5; border-radius:5px;}
+.bj .bjNei p i input{border:none; margin-left:0; padding-left: 0;}
+.bj .bjNei h2{ line-height: 60px; text-align: center;}
+.bj .bjNei h2 button{ width: 80px; height: 30px; border:none; border-radius:5px; background: #5bc0de; color: #fff; letter-spacing: 1px; cursor: pointer;}
+.bj .bjNei h2 button:hover{background: #31B0D5;}
+
+.dele{width: 100%; position:fixed; top: 0; left: 0; display: none;}
+.dele .deleNei{width: 300px; height: 160px; background: #fff; margin:150px auto;}
+.dele .deleNei h1{ padding-left: 20px; line-height: 45px; font-size: 18px; border-bottom:1px solid #E5E5E5; background: #F8F8F8;}
+.dele .deleNei p{ padding-left: 20px; height: 70px; line-height: 70px; font-size: 18px; border-bottom:1px solid #E5E5E5;}
+.dele .deleNei h2{ text-align: right; padding-right:10px;}
+.dele .deleNei h2 button{ width: 60px; height: 30px; margin-top: 6px; background: none; cursor: pointer;}
+.dele .deleNei h2 button:first-child{border:1px solid #0ae; border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-right:none;}
+.dele .deleNei h2 button:last-child{border:1px solid #dd514c; border-top-right-radius: 3px; border-bottom-right-radius: 3px;}
+.dele .deleNei h2 button:first-child:hover{background: #0ae; color: #fff;}
+.dele .deleNei h2 button:last-child:hover{background: #dd514c; color: #fff;}

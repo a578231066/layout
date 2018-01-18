@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="all/layui/css/layui.css" />
+    <link rel="stylesheet" href="css/information.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <strong class="layui-icon"><span>&#xe642;</span> 个人信息</strong>
+    </header>
+    
+    <div class="main">
+        <div class="one">
+            <p><img src="images/noavatar.jpg" alt="" /></p>
+            <ul>
+                <li><span>入驻姓名 : </span><i>张三</i></li>
+                <li><span>店铺信誉 : </span><i>良好</i></li>
+                <li><span>上次登录 : </span><i>2017-10-3 14:30:00</i></li>
+            </ul>
+        </div>
+        <div class="two">
+            <div>
+                <p>店铺信息</p>
+                <ul>
+                    <li><span>手机号码 :</span><i>13012345678</i></li>
+                    <li><span>电子邮箱 :</span><i>123@163.com</i></li>
+                    <li><span>店铺地址 :</span><i>黑龙江省哈尔滨市</i></li>
+                    <li><span>发货地址 :</span><i>黑龙江省哈尔滨市</i></li>
+                    <li><input type="submit" value="更改店铺信息" /></li>
+                </ul>
+            </div>
+            <div>
+                <p>账户信息</p>
+                <ul>
+                    <li><span>账户余额 :</span><i>￥123456.789</i><a href="javascript:void(0)"><button class="fr">提现</button></a></li>
+                    <li><span>收款渠道 :</span><i>支付宝</i></li>
+                    <li><span>银行账号 :</span><i>123456789012345678</i></li>
+                    <li><span>所属银行 :</span><i>建设银行</i></li>
+                    <li><input type="submit" value="更改银行信息" /></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="zhedang"></div>
+    <div class="vip">
+        <div class="vipNei">
+            <h1>更改会员信息<span>x</span></h1>
+            <ul>
+                <li><span>手机号码 :</span><input type="text" /></li>
+                <li><span>电子邮箱 :</span><input type="text" /></li>
+                <li><span>家庭住址 :</span><input type="text" /></li>
+                <li><span>归属地 :</span><input type="text" /></li>
+            </ul>
+            <p><button>确认修改</button></p>
+        </div>
+    </div>
+
+    <div class="vip1">
+        <div class="vipNei">
+            <h1>更改银行信息<span>x</span></h1>
+            <ul>
+                <li><span>银行卡号 :</span><input type="text" /></li>
+                <li><span>所属银行 :</span><input type="text" /></li>
+            </ul>
+            <p><button>确认修改</button></p>
+        </div>
+    </div>
+
+    <div class="tixian">
+        <div class="txNei">
+            <h1>选择提现方式<span>x</span></h1>
+            <ul>
+                <li>
+                    <label for="yhk">
+                        <input type="radio" id="yhk" name="zhifu" value="0" /><img src="images/yinlian.png" height="32" width="120" alt="" />
+                    </label>
+                    <p>
+                        <span>账号 :<i>1234****56789</i></span><br />
+                        <span>姓名: <i>张三</i></span>
+                    </p>
+                </li>
+                <li>
+                    <label for="zfb">
+                        <input type="radio" id="zfb" name="zhifu" value="1" /><img src="images/zfb.png" height="34" width="100" alt="" />
+                    </label>
+                    <p>
+                        <span>账号 :<i>123456</i></span><br />
+                        <span>姓名: <i>张三</i></span>
+                    </p>
+                </li>
+            </ul>
+            <p class="btn">
+                <button>确定</button>
+            </p>
+        </div>
+    </div>
+    
+
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="all/layui/layui.js"></script>
+    <script src="js/information.js"></script>
+</body>
+</html>
