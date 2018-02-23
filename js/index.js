@@ -4,7 +4,6 @@
 * @Last Modified by:   anchen
 * @Last Modified time: 2017-10-04 12:43:09
 */
-
 $(function(){
     var h=$(document).height();
     $(".layui-tab-content").height(h-150+"px");
