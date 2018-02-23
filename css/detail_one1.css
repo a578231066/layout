@@ -1,7 +1,6 @@
 header{ width: 98%; height: 20px; background: #FCFCFC; border-bottom:1px solid #DDD; padding:10px 15px; border-radius:4px 4px 0 0;}
 header .layui-icon{font-size: 14px;}
 header .layui-icon span{display: inline-block; width: 10px; height: 10px; line-height: 2px; margin-right: 4px; border-radius:2px;}
-
 .main{ width: 100%; height: auto;}
 .main div{width: 100%; padding:10px 0;}
 .main div span{display: inline-block; width: 10%; text-align: right; letter-spacing: 1px; font-size: 14px; color: #626262; font-weight: 700;}
