@@ -7,7 +7,6 @@
     修改原因:
     修改代码行数区间:
 */
-
 /* 全选按钮 */
     var oAll=document.getElementById("anniu");
     var oName=document.getElementsByName("probuct");
