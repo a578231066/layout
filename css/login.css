@@ -2,7 +2,7 @@
 * @Author: anchen
 * @Date:   2017-09-29 10:40:55
 * @Last Modified by:   anchen
-* @Last Modified time: 2017-09-29 13:51:04
+* @Last Modified time: 2017-09-29 13:51:04 
 */
 body{overflow:hidden;}
 .video-player{ background-color: transparent; display: block; position: absolute; z-index: 1; top:0;}
