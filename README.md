@@ -5,4 +5,10 @@
 #### layout框架和前端有些处处,但是相对还是一样
 #### layout框架用起来要比html里面的iframe框架实现的用户交互更好,代码更简洁
     
-#最近较忙,没有好好地弄,见谅
+#### 运行截图
+
+<img src="images/git/img1.gif" />
+
+<img src="images/git/img2.gif" />
+
+<img src="images/git/img3.gif" />
