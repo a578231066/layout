@@ -7,8 +7,8 @@
     
 #### 运行截图
 
-<img src="images/git/img1.gif" />
+<img src="images/git/img1.png" />
 
-<img src="images/git/img2.gif" />
+<img src="images/git/img2.png" />
 
-<img src="images/git/img3.gif" />
+<img src="images/git/img3.png" />
